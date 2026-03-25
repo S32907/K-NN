@@ -52,7 +52,8 @@ public class K_NN {
         //Result
         System.out.println("=======================");
         System.out.println("Correct Guesses: " + CorrectGuesses + " out of " + TestSet.GetFlowers().size());
-        System.out.println("Percentage of correct guesses: " + CorrectGuesses/TestSet.GetFlowers().size());
+        double percentage = (double)CorrectGuesses/TestSet.GetFlowers().size()*100;
+        System.out.printf("Percentage of correct guesses: %.2f%%\n", percentage);
 
     }
 
