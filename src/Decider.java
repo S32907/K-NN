@@ -60,6 +60,15 @@ public class Decider {
             }
         }
         System.out.println("Decision: " + Classified);
+        if (Classified.equals(NewFlower.getName())){
+            System.out.println("Correct decision");
+        }
+        else if (NewFlower.getName().equals("")){
+
+        }
+        else {
+            System.out.println("Wrong decision");
+        }
         return Classified;
     }
 
